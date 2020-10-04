@@ -11,6 +11,12 @@
 html {
     font-size: 15px;
     font-family: "Roboto", sans-serif;
+
+}
+
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+    display: none;
 }
 
 a,
