@@ -1,0 +1,249 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+a,
+p,
+li {
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* --------Navigation-------- */
+
+/* Gradiant */
+.navbar {
+    background: rgb(72, 159, 184);
+    background: linear-gradient(270deg, rgba(72, 159, 184, 1) 0%, rgba(2, 117, 216, 1) 100%);
+}
+
+/* Logo */
+.logo {
+    width: 4em;
+    height: 2em;
+    background: url("../img/School_logo.png") no-repeat;
+    background-size: contain;
+}
+
+/* Change color on hover */
+.logo:hover {
+    background: url("../img/school_logo_hover.png") no-repeat;
+    background-size: contain;
+}
+
+.nav-link:hover {
+    color: #f0ad4e !important;
+}
+
+/* --------Image Slider-------- */
+
+/* slider text */
+.carousel-caption {
+    font-weight: normal;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Silder Image */
+.carousel-item img {
+    width: 100%;
+    height: 91.05vh;
+    object-fit: cover;
+}
+
+/* -------- Our Founder -------- */
+.founder-size {
+    width: 60%;
+    margin-left: 4em;
+}
+
+
+
+.textcolor {
+    color: #444;
+}
+
+/* -------- News and Events -------- */
+
+.News_Events {
+    background: rgb(72, 159, 184);
+    background: linear-gradient(270deg, rgba(72, 159, 184, 1) 0%, rgba(2, 117, 216, 1) 100%);
+    padding: 5% 0%;
+}
+
+.News_Events h2 {
+    color: white;
+    margin-left: 1em;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.newsbutton {
+    margin-top: 1em;
+    margin-left: 4em;
+}
+
+/* -------- Curriculum -------- */
+
+/* zoom on hover */
+.zoom {
+    padding: 3% 0%;
+    overflow: hidden;
+}
+
+.zoom img {
+    width: 100%;
+    transition: 0.7s all ease-in-out;
+    padding: 10%;
+}
+
+.zoom:hover img {
+    transform: scale(1.2);
+}
+
+
+/* Heading */
+.Curriculum h1 {
+    font-size: 3em;
+}
+
+/* Icon */
+.icon-size {
+    margin-top: 0.3em;
+
+    font-size: 3em;
+    color: #0ECAF0;
+    transition: 0.7s;
+    border: none;
+    outline: none;
+}
+
+.icon-size:hover {
+    transform: scale(1.2);
+    color: #0275d8;
+}
+
+/* -------- Principal's Message -------- */
+
+/*background cover */
+.bgcover {
+    background: linear-gradient(135deg, rgba(4, 54, 99, 0.5) 0%, rgba(60, 134, 155, 0.8) 100%), url("../img/campus.jpg") center no-repeat;
+    padding: 5% 0%;
+    background-size: cover;
+
+}
+
+/* Heading */
+.bgcover h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #f0ad4e;
+}
+
+/* Content */
+.bgcover p {
+    background: rgba(0, 0, 0, 0.4);
+    padding: .2em;
+    font-size: 1em;
+    font-weight: normal;
+    text-align: justify;
+    color: #f0ad4e;
+}
+
+
+
+
+/* -------- Footer -------- */
+
+#PageVisit p {
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.1em;
+    margin: 0;
+    text-align: center;
+}
+
+/* Color */
+.footercolor {
+    width: 100%;
+    background: rgb(72, 159, 184);
+    background: linear-gradient(270deg, rgba(72, 159, 184, 1) 0%, rgba(2, 117, 216, 1) 100%);
+    color: white;
+}
+
+/* Centering Text */
+.centertext {
+    text-align: center;
+}
+
+/* Social media links */
+.social-media img {
+    width: 2em;
+    margin-top: -1em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+@media only screen and (min-width: 770px) {
+
+
+    /* -------- Principal's Message -------- */
+
+    /* Heading */
+    .bgcover h2 {
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        font-size: 3em;
+        color: #f0ad4e;
+    }
+
+    /*Text background */
+    .undertone {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+        ;
+    }
+
+    /* Content */
+    .bgcover p {
+        background: none;
+        margin-left: 4.75em;
+        font-size: 1.2em;
+        font-weight: normal;
+        text-align: left;
+        color: #f0ad4e;
+    }
+
+}
